@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tehtävälista</title>
+    <link rel="icon" type="image/png" href="clippy.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <!-- Div, joka sisältää tehtävälistan kokonaisuudessaan  -->
+    <div id="div" class="header">
+        <div>
+            <h1>Tehtävälista jQuery</h1>
+            <p>Painamalla listan tehtävää voit poistaa sen</p>
+            <!-- Luodaan tekstikenttä, lisää nappula, sekä poista kaikki nappulat -->
+            <fieldset>
+                <div>
+                    <input type="text" placeholder="Kirjoita tehtävä" id="inputTeksti" class="tekstikentta" />
+                </div>
+                <div>
+                    <input type="button" class="btn" value="+" id="taskBtn" />
+                    <input type="button" class="btnRemove" value="Poista kaikki" id="btnRemove"></input>
+                </div>
+            </fieldset>
+            <!-- Listan luonti -->
+            <div>
+                <ul class="lista" id="tehtava">
+                    <li class="listaKohta active">Tehtävät</li>
+                    <li id="esim1" class="listaKohta ">1. Käy salilla</li>
+                    <li id="esim2" class="listaKohta ">2. Käy lenkillä</li>
+                </ul>
+                <br/>
+            </div>
+            <!-- Copyrightin luonti -->
+            <div class="alaDiv">
+                <span class="copyrightTeksti">Made by Atte&Joona©</span>
+            </div>
+        </div>
+    </div>
+    <!-- Kiva Clippy kuva -->
+    <div><img id="clippy" src="clippy.png"></div>
+</body>
+
+</html>
